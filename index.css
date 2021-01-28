@@ -1,0 +1,9 @@
+/* color de fondo del footer como el de la web site de platzi */
+#footer {
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
+}
+
+/* definimos el color del texto de las anclas "a" del footer a color balanco */
+#footer a {
+    color: white;
+}
