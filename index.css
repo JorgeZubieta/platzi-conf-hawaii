@@ -1,3 +1,12 @@
+.text-platzi {
+    /* !important para que pise cualquier color que pueda tener */
+    color: #97c93e !important;
+}
+
+#header img{
+    width: 80px;
+}
+
 /* color de fondo del footer como el de la web site de platzi */
 #footer {
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
