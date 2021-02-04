@@ -7,12 +7,23 @@
     width: 80px;
 }
 
-/* color de fondo del footer como el de la web site de platzi */
-#footer {
-    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
+#main .carousel-inner img {
+/* es importante este tipo de declaracion/orden id, clase, elemento */
+    max-height: 70vh;
+    /* vh - viewport height, 70% del alto de la pantalla */
+    object-fit: cover;
+    /* solucionamos la imagen estirada por el efecto 70hv */
+    filter: grayscale(70%);
+    /* agregamos un filtro en la escala de grises */
 }
 
-/* definimos el color del texto de las anclas "a" del footer a color balanco */
+#footer {
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
+    /* color de fondo del footer como el de la web site de platzi */
+
+}
+
 #footer a {
+    /* definimos el color del texto de las anclas "a" del footer a color balanco */
     color: white;
 }
