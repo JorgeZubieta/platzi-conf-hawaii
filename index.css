@@ -3,6 +3,14 @@
     color: #97c93e !important;
 }
 
+.btn-platzi {
+    background-color: #97c93e;
+    color: white;
+}
+.btn-platzi:hover {
+    background-color: #7ba334;
+}
+
 #header img{
     width: 80px;
 }
