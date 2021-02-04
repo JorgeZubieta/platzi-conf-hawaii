@@ -17,6 +17,32 @@
     /* agregamos un filtro en la escala de grises */
 }
 
+#carousel {
+    position: relative;
+}
+#carousel .overlay {
+    position: absolute;
+    /* el efecto ocupara todo el ancho y alto segun la pantalla respnsive */
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* efecto de 0.5 de trasparencia */
+    color: white;
+    /* color del texo que que ira sobre el overlay */
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+    /* con esta selccion podemos centrar verticalmente el contenido de un contenedor */
+    height: 100%;
+    /* tuve que centrar el contenido de la fila , 
+    pero se pude hacer en html agregando a la clase el
+    atributo align-items-center de esta manera! */
+    /* align-items: center; */
+}
+
 #footer {
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
     /* color de fondo del footer como el de la web site de platzi */
