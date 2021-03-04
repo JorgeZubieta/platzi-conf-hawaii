@@ -51,6 +51,18 @@
     /* align-items: center; */
 }
 
+#place-time img{
+    /* con esto logramos que siempre la imagen tenga el 100% aunque cambie el tamanio de lapantalla
+    se mantendra visible la imagen y columna */
+    max-width: 100%;
+}
+
+#place-time {
+    background-color: #272C31;
+    color: white;
+    /* text-align: center; */
+}
+
 #footer {
     background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
     /* color de fondo del footer como el de la web site de platzi */
