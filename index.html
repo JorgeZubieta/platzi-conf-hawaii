@@ -11,9 +11,9 @@
     <title>PlatziConf Hawaii</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="56">
     <!-- header -->
-    <nav id="header" class="navbar navbar-expand-md navbar-expand-lg navbar-dark bg-dark">
+    <nav id="header" class="navbar navbar-expand-md navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">  
             <a class="navbar-brand" href="#">
                 <img src="assets/images/platzi-logo.png" alt="Platzi logo">
@@ -23,28 +23,28 @@
             <span class="navbar-toggler-icon"></span>
             </button>
         
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbar">
                 <!-- cambie el mr por ml para poner un margen automatico a la derecha -->
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">La conferencia</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main">La conferencia</a>
                     </li>
             
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" href="#speakers">Los oradores</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a class="nav-link" href="#place-time">El lugar y la fecha</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conviertete en orador</a>
+                        <a class="nav-link" href="#conviertete-en-un-orador">Conviertete en orador</a>
                     </li>
 
                     <li class="nav-item">
                         <!-- agregamos la clase (. en css) .text-platzi para darle estilo color verde a Comprar ticket-->
-                        <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+                        <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalCompra">Comprar tickets</a>
                     </li>
                 </ul>
             </div>
@@ -87,7 +87,7 @@
                             <a href="#" class="btn btn-outline-light">
                                 Quiero ser orador
                             </a>
-                            <button type="button" class="btn btn-platzi">
+                            <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">
                                 Comprar tickets
                             </button>
                         </div>
@@ -277,6 +277,28 @@
         </div>
     </footer>
     <!-- /footer -->
+
+<!-- Modal -->
+<div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        <div class="modal-body">
+        ...
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Modal -->
 
     <!-- codigo para que solucionar el efecto de menu desplegable -->
     <!-- jquery first, then popper.js, then bootstrap JS -->
